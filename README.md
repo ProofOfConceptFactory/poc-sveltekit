@@ -1,38 +1,81 @@
-# sv
+Hello from SvelteKit!👋
+========================
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+The "Hello from SvelteKit!👋" application is just a starter to show a minimalist SvelteKit app.
 
-## Creating a project
+Requirements
+------------
 
-If you're seeing this, you've probably already done this step. Congrats!
+* [Docker Desktop][1]
 
-```sh
-# create a new project in the current directory
-npx sv create
+Installation
+------------
 
-# create a new project in my-app
-npx sv create my-app
+Clone this repository:
+
+```console
+https://github.com/ProofOfConceptFactory/poc-sveltekit
 ```
 
-## Developing
+Go on the project root folder:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```console
+cd poc-sveltekit/
 ```
 
-## Building
+Execute this command to launch docker container in dev:
 
-To create a production version of your app:
-
-```sh
-npm run build
+```console
+docker compose -f docker/compose.yaml up -d --build
 ```
 
-You can preview the production build with `npm run preview`.
+Install JavaScript dependencies:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```console
+docker compose -f docker/compose.yaml exec node pnpm install
+```
+
+Usage
+-----
+
+There's no need to configure anything before running the application. There are
+2 different ways of running this application depending on your needs:
+
+**Option 1. Run the application in dev mode**
+
+Run this command:
+
+```bash
+docker compose -f docker/compose.yaml exec node pnpm run dev
+```
+
+Then access the application in your browser at the given URL (<http://localhost:8000> by default).
+
+**Option 2. Run the application in prod mode**
+
+```bash
+docker compose -f docker/compose.yaml exec node pnpm run build
+```
+You now have your fresh JavaScript files for production 🚀.
+You can check everything is OK by running:
+
+```bash
+docker compose -f docker/compose.yaml exec node pnpm run preview
+```
+
+Tests
+-----
+
+Install Cypress dependencies:
+
+```console
+docker compose -f docker/compose.yaml exec node pnpm cypress install
+```
+
+Execute this command to run tests:
+
+```console
+docker compose -f docker/compose.yaml exec node pnpm cypress run
+```
+
+[1]: https://www.docker.com/products/docker-desktop/
