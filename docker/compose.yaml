@@ -5,6 +5,7 @@ services:
       dockerfile: docker/front/Dockerfile
     ports:
       - 8000:8000
+      - 8080:8080
     volumes:
       - ../:/app
     restart: unless-stopped
