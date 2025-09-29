@@ -1,0 +1,93 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: GitHub Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - name: Install mkcert latest version and generate certificates
+        run: |
+          LATEST_VERSION=$(curl -s https://api.github.com/repos/FiloSottile/mkcert/releases/latest | jq -r '.tag_name')
+          curl -L -o mkcert "https://github.com/FiloSottile/mkcert/releases/download/${LATEST_VERSION}/mkcert-${LATEST_VERSION}-linux-amd64" -o mkcert
+          chmod +x mkcert
+          ./mkcert -install
+          mkdir -p certs
+          ./mkcert -key-file certs/poc-sveltekit.key.pem -cert-file certs/poc-sveltekit.crt.pem localhost
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run dev server in background
+        run: pnpm dev &
+      - name: Install Cypress
+        run: pnpm cypress install
+      - name: Run tests
+        run: pnpm cypress run
+
+  deploy:
+    needs: tests
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure base path in vite.config.js
+        run: |
+          if ! grep -q "base:" vite.config.ts; then
+            # Add base key to vite.config.ts
+            sed -i "/return {/a \\    base: isDev ? '/' : '/poc-sveltekit/'," vite.config.ts
+          fi
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build
+        run: pnpm build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload dist folder
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
