@@ -49,7 +49,7 @@ Run this command:
 docker compose -f docker/compose.yaml exec node pnpm run dev
 ```
 
-Then access the application in your browser at the given URL (<http://localhost:8000> by default).
+Then access the application in your browser at the given URL (<https://localhost:8000> by default).
 
 **Option 2. Run the application in prod mode**
 
