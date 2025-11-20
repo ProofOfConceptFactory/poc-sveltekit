@@ -10,19 +10,19 @@ importers:
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^7.0.0
-        version: 7.0.0(@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))
+        version: 7.0.0(@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))
       '@sveltejs/adapter-static':
         specifier: ^3.0.9
-        version: 3.0.10(@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))
+        version: 3.0.10(@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))
       '@sveltejs/kit':
         specifier: ^2.22.0
-        version: 2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))
+        version: 2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^6.0.0
-        version: 6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))
+        version: 6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))
       cypress:
         specifier: ^15.3.0
-        version: 15.6.0
+        version: 15.7.0
       svelte:
         specifier: ^5.0.0
         version: 5.43.0
@@ -34,7 +34,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: ^7.0.4
-        version: 7.2.0(@types/node@24.10.0)
+        version: 7.2.0(@types/node@24.10.1)
 
 packages:
 
@@ -382,8 +382,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/node@24.10.0':
-    resolution: {integrity: sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A==}
+  '@types/node@24.10.1':
+    resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
 
   '@types/sinonjs__fake-timers@8.1.1':
     resolution: {integrity: sha512-0kSuKjAS0TrGLJ0M/+8MaFkGsQhZpB6pxOmvS3K8FYI72K//YmdfoW9X2qPsAKh1mkwxGD5zib9s1FIFed6E8g==}
@@ -559,8 +559,8 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  cypress@15.6.0:
-    resolution: {integrity: sha512-Vqo66GG1vpxZ7H1oDX9umfmzA3nF7Wy80QAc3VjwPREO5zTY4d1xfQFNPpOWleQl9vpdmR2z1liliOcYlRX6rQ==}
+  cypress@15.7.0:
+    resolution: {integrity: sha512-1C81zKxnQckYm2XGi37rPV4rN0bzUoWhydhKdOyshJn5gJKszEx5as9VLSZI0jp0ye49QxmnbU4TtMpcD+OmGQ==}
     engines: {node: ^20.1.0 || ^22.0.0 || >=24.0.0}
     hasBin: true
 
@@ -689,8 +689,8 @@ packages:
   forever-agent@0.6.1:
     resolution: {integrity: sha512-j0KLYPhm6zeac4lz3oJ3o65qvgQCcPubiyotZrXqEaG4hNagNYO8qdlUrX5vwqv9ohqeT/Z3j6+yW067yWWdUw==}
 
-  form-data@4.0.4:
-    resolution: {integrity: sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==}
+  form-data@4.0.5:
+    resolution: {integrity: sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==}
     engines: {node: '>= 6'}
 
   fs-extra@9.1.0:
@@ -989,11 +989,6 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  semver@7.7.3:
-    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   set-cookie-parser@2.7.1:
     resolution: {integrity: sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ==}
 
@@ -1237,7 +1232,7 @@ snapshots:
       combined-stream: 1.0.8
       extend: 3.0.2
       forever-agent: 0.6.1
-      form-data: 4.0.4
+      form-data: 4.0.5
       http-signature: 1.4.0
       is-typedarray: 1.0.0
       isstream: 0.1.2
@@ -1428,19 +1423,19 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-auto@7.0.0(@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))':
+  '@sveltejs/adapter-auto@7.0.0(@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))':
     dependencies:
-      '@sveltejs/kit': 2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))
+      '@sveltejs/kit': 2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))
 
-  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))':
+  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))':
     dependencies:
-      '@sveltejs/kit': 2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))
+      '@sveltejs/kit': 2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))
 
-  '@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))':
+  '@sveltejs/kit@2.48.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))':
     dependencies:
       '@standard-schema/spec': 1.0.0
       '@sveltejs/acorn-typescript': 1.0.6(acorn@8.15.0)
-      '@sveltejs/vite-plugin-svelte': 6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))
+      '@sveltejs/vite-plugin-svelte': 6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))
       '@types/cookie': 0.6.0
       acorn: 8.15.0
       cookie: 0.6.0
@@ -1453,26 +1448,26 @@ snapshots:
       set-cookie-parser: 2.7.1
       sirv: 3.0.2
       svelte: 5.43.0
-      vite: 7.2.0(@types/node@24.10.0)
+      vite: 7.2.0(@types/node@24.10.1)
 
-  '@sveltejs/vite-plugin-svelte-inspector@5.0.1(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))':
+  '@sveltejs/vite-plugin-svelte-inspector@5.0.1(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))
+      '@sveltejs/vite-plugin-svelte': 6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))
       debug: 4.4.3(supports-color@8.1.1)
       svelte: 5.43.0
-      vite: 7.2.0(@types/node@24.10.0)
+      vite: 7.2.0(@types/node@24.10.1)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))':
+  '@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 5.0.1(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.0))
+      '@sveltejs/vite-plugin-svelte-inspector': 5.0.1(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1)))(svelte@5.43.0)(vite@7.2.0(@types/node@24.10.1))
       debug: 4.4.3(supports-color@8.1.1)
       deepmerge: 4.3.1
       magic-string: 0.30.19
       svelte: 5.43.0
-      vite: 7.2.0(@types/node@24.10.0)
-      vitefu: 1.1.1(vite@7.2.0(@types/node@24.10.0))
+      vite: 7.2.0(@types/node@24.10.1)
+      vitefu: 1.1.1(vite@7.2.0(@types/node@24.10.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -1480,7 +1475,7 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/node@24.10.0':
+  '@types/node@24.10.1':
     dependencies:
       undici-types: 7.16.0
     optional: true
@@ -1493,7 +1488,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
     optional: true
 
   acorn@8.15.0: {}
@@ -1627,7 +1622,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  cypress@15.6.0:
+  cypress@15.7.0:
     dependencies:
       '@cypress/request': 3.0.9
       '@cypress/xvfb': 1.2.4(supports-color@8.1.1)
@@ -1665,7 +1660,6 @@ snapshots:
       process: 0.11.10
       proxy-from-env: 1.0.0
       request-progress: 3.0.0
-      semver: 7.7.3
       supports-color: 8.1.1
       systeminformation: 5.27.7
       tmp: 0.2.5
@@ -1817,7 +1811,7 @@ snapshots:
 
   forever-agent@0.6.1: {}
 
-  form-data@4.0.4:
+  form-data@4.0.5:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
@@ -2113,8 +2107,6 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  semver@7.7.3: {}
-
   set-cookie-parser@2.7.1: {}
 
   shebang-command@2.0.0:
@@ -2290,7 +2282,7 @@ snapshots:
       core-util-is: 1.0.2
       extsprintf: 1.3.0
 
-  vite@7.2.0(@types/node@24.10.0):
+  vite@7.2.0(@types/node@24.10.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -2299,12 +2291,12 @@ snapshots:
       rollup: 4.52.5
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       fsevents: 2.3.3
 
-  vitefu@1.1.1(vite@7.2.0(@types/node@24.10.0)):
+  vitefu@1.1.1(vite@7.2.0(@types/node@24.10.1)):
     optionalDependencies:
-      vite: 7.2.0(@types/node@24.10.0)
+      vite: 7.2.0(@types/node@24.10.1)
 
   which@2.0.2:
     dependencies:
